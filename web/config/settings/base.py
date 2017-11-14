@@ -15,9 +15,10 @@ SECRET_KEY = Secret.SECRET_KEY
 
 DEBUG = False
 
-ALLOWED_HOST = [
+ALLOWED_HOSTS = [
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    '0.0.0.0'
 ]
 
 INTERNAL_IPS = [
@@ -74,7 +75,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'HOST': 'db',
+        'HOST': 'recipe_db',
         'PORT': 5432,
     }
 }
